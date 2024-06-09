@@ -5,9 +5,7 @@ import java.time.LocalDate;
 public class Mentoria extends Conteudo {
     private LocalDate data;
 
-    public Mentoria() {
-//        super();
-    }
+    public Mentoria() {}
 
     public Mentoria setData(LocalDate data) {
         this.data = data;

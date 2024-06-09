@@ -12,13 +12,13 @@
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <main.dir>.</main.dir>
-        <test.dir>.</test.dir>
+        <main.dir>src</main.dir>
+        <test.dir>src</test.dir>
     </properties>
 
     <build>
-<!--        <sourceDirectory>${main.dir}</sourceDirectory>-->
-<!--        <testSourceDirectory>${test.dir}</testSourceDirectory>-->
+        <sourceDirectory>${main.dir}</sourceDirectory>
+        <testSourceDirectory>${test.dir}</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
