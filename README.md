@@ -23,6 +23,7 @@ class Bootcamp
 Bootcamp : -int NUMBER_OF_DAYS$
 Bootcamp : -String nome
 Bootcamp : -String descricao
+Bootcamp : -LocalDate dataInicial
 Bootcamp : -LocalDate dataFinal
 Bootcamp : -Set~Dev~ devsInscritos
 Bootcamp : -Set~Conteudo~ conteudos
@@ -40,8 +41,8 @@ Dev : +calcularTotalXp() double
 Conteudo <|-- Curso : Inheritance
 Conteudo <|-- Mentoria : Inheritance
 Bootcamp "1..*" *-- "1" Dev : Composition
-Bootcamp *-- Conteudo : Composition
-Conteudo o-- Dev : Aggregation
-Conteudo o-- Dev : Aggregation
+Bootcamp "1..*" *-- "1" Conteudo : Composition
+Conteudo "0..*" o-- "1" Dev : Aggregation
+Conteudo "0..*" o-- "1" Dev : Aggregation
 
 ```
